@@ -1,4 +1,4 @@
-package com.care.di_ex01;
+package com.care.di_ex02;
 
 public class Student {
 	public void print(String name, int age) {
