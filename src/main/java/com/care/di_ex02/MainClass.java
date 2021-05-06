@@ -12,8 +12,8 @@ public class MainClass {
 				new GenericXmlApplicationContext(path);
 		STBean stb = ctx.getBean("stb",STBean.class); //빈을 가져온다
 		
-		stb.setName("홍길동1");
-		stb.setAge(201);
+		//stb.setName("홍길동1");
+		//stb.setAge(201);
 		
 		stb.print();
 		

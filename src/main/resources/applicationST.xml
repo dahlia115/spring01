@@ -11,5 +11,9 @@
 		<property name="st">
 			<ref bean="st01"/>
 		</property>
+		<property name="name" value="김철수"/>
+		<property name="age">
+			<value>123</value>
+		</property>
 	</bean>
 </beans>
