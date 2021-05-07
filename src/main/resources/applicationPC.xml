@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="pc" class="com.care.di_ex03.PrintClass"/>
+	<bean id="pc" class="com.care.di_ex03.PrintClass" />
 	<bean id="sc" class="com.care.di_ex03.SaveClass">
-		<property name="pc" ref="pc"/>	
+		<property name="pc" ref="pc" />
 		<property name="hobby">
 			<list>
 				<value>수영</value>
@@ -14,10 +14,27 @@
 		</property>
 		<property name="weather">
 			<map>
-				<entry key="오늘" value="우박옵니다"/>
-				<entry key="내일" value="맑을꺼에요"/>
-				
+				<entry key="오늘" value="꾸리꾸리하네요" />
+				<entry key="내일" value="맑았음좋겠다" />
 			</map>
 		</property>
 	</bean>
+	<bean id="sc1" class="com.care.di_ex03.SaveClass">
+		<property name="pc" ref="pc" />
+		<constructor-arg value="홍길동" />
+		<constructor-arg>
+			<list>
+				<value>생성자1</value>
+				<value>생성자2</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="오늘" value="생성자 오늘" />
+				<entry key="내일" value="생성자 내일" />
+			</map>
+		</constructor-arg>
+	</bean>
+
 </beans>
+

@@ -8,6 +8,13 @@ public class SaveClass {
 	private String name;
 	private ArrayList<String>hobby;
 	private HashMap<String, String>weather;
+	
+	public void SaveClass() {}
+	public void SaveClass(String name, ArrayList hobby, HashMap weather) {
+		this.name = name; 
+		this.hobby = hobby;
+		this.weather = weather; //초기화
+	}
 	public void pcFunc() {
 		pc.print(name, hobby, weather);
 	}

@@ -8,5 +8,8 @@ public class MainClass {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(path);
 		SaveClass sc = ctx.getBean("sc",SaveClass.class);
 		sc.pcFunc();
+
+		SaveClass sc1 = ctx.getBean("sc1",SaveClass.class);
+		sc1.pcFunc();
 	}
 }
