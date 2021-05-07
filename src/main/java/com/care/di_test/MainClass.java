@@ -10,7 +10,7 @@ public class MainClass {
 				new GenericXmlApplicationContext(path);
 		PrintBean pb = ctx.getBean("pb",PrintBean.class);
 		
-		pb.setPrint("가나다라마바사");
+		//pb.setPrint("가나다라마바사");
 		pb.printString();
 		
 	}
