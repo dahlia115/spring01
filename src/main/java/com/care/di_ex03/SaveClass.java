@@ -9,8 +9,8 @@ public class SaveClass {
 	private ArrayList<String>hobby;
 	private HashMap<String, String>weather;
 	
-	public void SaveClass() {}
-	public void SaveClass(String name, ArrayList hobby, HashMap weather) {
+	public SaveClass() {}
+	public SaveClass(String name, ArrayList hobby, HashMap weather) {
 		this.name = name; 
 		this.hobby = hobby;
 		this.weather = weather; //초기화
